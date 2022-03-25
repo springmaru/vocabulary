@@ -51,7 +51,7 @@
 }
 
 #making{
-    margin-top:6%;
+    margin-top:5.5%;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
     max-width: 50%;
@@ -74,6 +74,7 @@
 @media (max-width: 1200px) {
     #making {
       max-width: 100%;
+      margin-left: 0%;
     }
   }
   
