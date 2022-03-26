@@ -48,20 +48,20 @@ const words_3 = {
 }
 
 const words_4 = { 
-    "bolster": { "en-meaning" : "(v.) to support, give a boost to; (n.) a long pillow or cushion; a supporting post", "ko-meaning" : "지지하다  보강하다  긴 배개", "synonyms" : "", "antonym" : ""},
-    "deplore": { "en-meaning" : "(v.) to feel or express regret or disapproval", "ko-meaning" : "한탄하다  개탄하다  슬퍼하다", "synonyms" : "", "antonym" : ""},
-    "frivolous": { "en-meaning" : "(adj.) of little importance, not worthy of serious attention; not meant seriously", "ko-meaning" : "하찮은  경박한  경솔한  사소한", "synonyms" : "", "antonym" : ""},
-    "obsess": { "en-meaning" : "(v.) to trouble, haunt, or fill the mind", "ko-meaning" : "사로잡히다  늘러붙다  붙어 다니다", "synonyms" : "", "antonym" : ""},
+    "bolster": { "en-meaning" : "(v.) to support, give a boost to; (n.) a long pillow or cushion; a supporting post", "ko-meaning" : "지지하다  보강하다  긴 배개", "synonyms" : "reinforce, buttress, validate", "antonym" : "undermine, weaken, impair"},
+    "deplore": { "en-meaning" : "(v.) to feel or express regret or disapproval", "ko-meaning" : "한탄하다  개탄하다  슬퍼하다", "synonyms" : "lament, bemoan, bewail", "antonym" : "approve, commend, extol"},
+    "frivolous": { "en-meaning" : "(adj.) of little importance, not worthy of serious attention; not meant seriously", "ko-meaning" : "하찮은  경박한  경솔한  사소한", "synonyms" : "silly, foolish, inane, petty", "antonym" : "serious, important, significant"},
+    "obsess": { "en-meaning" : "(v.) to trouble, haunt, or fill the mind", "ko-meaning" : "사로잡히다  늘러붙다  붙어 다니다", "synonyms" : "preoccupy", "antonym" : "X"},
 
-    "ornate": { "en-meaning" : "(adj.) elaborately decorated; showily splendid", "ko-meaning" : "화려하게 장식한  화려한", "synonyms" : "", "antonym" : ""},
-    "oust": { "en-meaning" : "(v.) to remove, drive out of a position or place", "ko-meaning" : "빼앗다  내쫓다  축출하다", "synonyms" : "", "antonym" : ""},
-    "peruse": { "en-meaning" : "(v.) to read thoroughly and carefully", "ko-meaning" : "통독하다  숙독하다  읽다", "synonyms" : "", "antonym" : ""},
-    "prone": { "en-meaning" : "(adj.) lying face down; inclined, likely", "ko-meaning" : "경향이 있는", "synonyms" : "", "antonym" : ""},
+    "ornate": { "en-meaning" : "(adj.) elaborately decorated; showily splendid", "ko-meaning" : "화려하게 장식한  화려한", "synonyms" : "fancy, flashy, flamboyant", "antonym" : "plain, stark, austere"},
+    "oust": { "en-meaning" : "(v.) to remove, drive out of a position or place", "ko-meaning" : "빼앗다  내쫓다  축출하다", "synonyms" : "expel, eject", "antonym" : "admit, welcome"},
+    "peruse": { "en-meaning" : "(v.) to read thoroughly and carefully", "ko-meaning" : "통독하다  숙독하다  읽다", "synonyms" : "study, pore over, scrutinize", "antonym" : "X"},
+    "prone": { "en-meaning" : "(adj.) lying face down; inclined, likely", "ko-meaning" : "경향이 있는", "synonyms" : "prostrate, liable", "antonym" : "standing upright, inlikely"},
 
-    "residue": { "en-meaning" : "(n.) a remainder, that which remains when a part has been used up or removed", "ko-meaning" : "잔류물  잔존  잔여  찌꺼기", "synonyms" : "", "antonym" : ""},
-    "solicitous": { "en-meaning" : "(adj.) showing concern or care; fearful or anxious about someone or something", "ko-meaning" : "염려하는  걱정하는  열심인", "synonyms" : "", "antonym" : ""},
-    "staid": { "en-meaning" : "(adj.) serious and dignified; quiet or subdued in character or conduct", "ko-meaning" : "침착한  성실한  불변의", "synonyms" : "", "antonym" : ""},
-    "sustain": { "en-meaning" : "(v.) to support, nourish, keep up; to suffer, undergo; to bear up under, withstand; to affirm the validity of", "ko-meaning" : "지속하다  지탱하다  견디다  지지하다  부상을 입다", "synonyms" : "", "antonym" : ""}
+    "residue": { "en-meaning" : "(n.) a remainder, that which remains when a part has been used up or removed", "ko-meaning" : "잔류물  잔존  잔여  찌꺼기", "synonyms" : "remnant, remains, leavings", "antonym" : "X"},
+    "solicitous": { "en-meaning" : "(adj.) showing concern or care; fearful or anxious about someone or something", "ko-meaning" : "염려하는  걱정하는  열심인", "synonyms" : "concerned", "antonym" : "unconernced, indifferent, apathetic"},
+    "staid": { "en-meaning" : "(adj.) serious and dignified; quiet or subdued in character or conduct", "ko-meaning" : "침착한  성실한  불변의", "synonyms" : "sedate, sober, prim", "antonym" : "gaudy, jaunty, unconventional"},
+    "sustain": { "en-meaning" : "(v.) to support, nourish, keep up; to suffer, undergo; to bear up under, withstand; to affirm the validity of", "ko-meaning" : "지속하다  지탱하다  견디다  지지하다  부상을 입다", "synonyms" : "foster, uphold", "antonym" : "X"}
 }
 
 const words_5 = { 

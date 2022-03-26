@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 <style>
 body {
     font-family: "Noto Sans KR"
@@ -61,7 +61,7 @@ body {
         <p class = "display-2">
         Vocabulary Workshop
         </p>
-        <p class="display-6">Unit 1</p>
+        <p class="display-6">Unit 2</p>
 
         <br>
 
@@ -226,25 +226,27 @@ body {
 
 <script>
 
-const words_1 = {"citadel": {"ko-meaning" : "요새", "en-meaning" : "(n.) a fortress that overlooks and protects a city; any strong or commanding place", "synonyms" : "fort, stronghold, bulwark, bastion", "antonym" : "X"},
-"collaborate": {"ko-meaning" : "협업하다", "en-meaning" : "(v.) to work with, work together", "synonyms" : "team up, join forces", "antonym" : "work alone"},
-"decree":{"en-meaning" : "(n.) an order having the force of law; (v.) to issue such an order; to command firmly or forcefully", "ko-meaning" : "명령  조례  명하다", "synonyms" : "(n.)proclamation edict;(v.)proclaim", "antonym" : "X"},
-"discordant":{"en-meaning" : "(adj.) disagreeable in sound, jarring; lacking in harmony, conflicting", "ko-meaning" : "불협화음", "synonyms" : "grating, shrill, different, divergent, conflicting", "antonym" : "harmonious, in agreement"},
-"evolve":{"en-meaning" : "(v.) to develop gradually; to rise to a higher level", "ko-meaning" : "진화하다", "synonyms" : "unfold, emerge", "antonym" : "wither, atrophy"},
-"excerpt":{"en-meaning" : "(n.) a passage taken from a book, article, etc.; (v.) to take such a passage; to quote", "ko-meaning" : "발췌  인용  발췌하다  인용하다", "synonyms" : "portion, section, extract", "antonym" : "X"},
-"grope":{"en-meaning" : "(v.) to feel about hesitantly with the hands; to search blindly and uncertainly", "ko-meaning" : "더듬다", "synonyms" : "fumble for, cast about for", "antonym" : "X"},
-"hover":{"en-meaning" : "(v.) to float or hang suspended over; to move back and forth uncertainly over or around", "ko-meaning" : "날다  떠다니다", "synonyms" : "linger, waver, seesaw", "antonym" : "soar"},
-"preclude":{"en-meaning" : "(v.) to make impossible, prevent, shut out", "ko-meaning" : "방해하다  막다  배제하다", "synonyms" : "hinder, check, stop", "antonym" : "X"},
-"revert":{"en-meaning" : "(v.) to return, go back", "ko-meaning" : "되돌아가다  복귀하다  회고하다", "synonyms" : "relapse, regress", "antonym" : "progress, advance"},
-"servile":{"en-meaning" : "(adj.) of or relating to a slave; behaving like or suitable for a slave or a servant, menial; lacking spirit or independence, abjectly submissive", "ko-meaning" : "노예의  아첨하는", "synonyms" : "slavish, groveling", "antonym" : "X"},
-"vigil":{"en-meaning" : "(n.) a watch, especially at night; any period of watchful attention", "ko-meaning" : "불침번  철야 ", "synonyms" : "X", "antonym" : "X"},
+const words_4 = { 
+    "bolster": { "en-meaning" : "(v.) to support, give a boost to; (n.) a long pillow or cushion; a supporting post", "ko-meaning" : "지지하다  보강하다  긴 배개", "synonyms" : "reinforce, buttress, validate", "antonym" : "undermine, weaken, impair"},
+    "deplore": { "en-meaning" : "(v.) to feel or express regret or disapproval", "ko-meaning" : "한탄하다  개탄하다  슬퍼하다", "synonyms" : "lament, bemoan, bewail", "antonym" : "approve, commend, extol"},
+    "frivolous": { "en-meaning" : "(adj.) of little importance, not worthy of serious attention; not meant seriously", "ko-meaning" : "하찮은  경박한  경솔한  사소한", "synonyms" : "silly, foolish, inane, petty", "antonym" : "serious, important, significant"},
+    "obsess": { "en-meaning" : "(v.) to trouble, haunt, or fill the mind", "ko-meaning" : "사로잡히다  늘러붙다  붙어 다니다", "synonyms" : "preoccupy", "antonym" : "X"},
 
-};
+    "ornate": { "en-meaning" : "(adj.) elaborately decorated; showily splendid", "ko-meaning" : "화려하게 장식한  화려한", "synonyms" : "fancy, flashy, flamboyant", "antonym" : "plain, stark, austere"},
+    "oust": { "en-meaning" : "(v.) to remove, drive out of a position or place", "ko-meaning" : "빼앗다  내쫓다  축출하다", "synonyms" : "expel, eject", "antonym" : "admit, welcome"},
+    "peruse": { "en-meaning" : "(v.) to read thoroughly and carefully", "ko-meaning" : "통독하다  숙독하다  읽다", "synonyms" : "study, pore over, scrutinize", "antonym" : "X"},
+    "prone": { "en-meaning" : "(adj.) lying face down; inclined, likely", "ko-meaning" : "경향이 있는", "synonyms" : "prostrate, liable", "antonym" : "standing upright, inlikely"},
+
+    "residue": { "en-meaning" : "(n.) a remainder, that which remains when a part has been used up or removed", "ko-meaning" : "잔류물  잔존  잔여  찌꺼기", "synonyms" : "remnant, remains, leavings", "antonym" : "X"},
+    "solicitous": { "en-meaning" : "(adj.) showing concern or care; fearful or anxious about someone or something", "ko-meaning" : "염려하는  걱정하는  열심인", "synonyms" : "concerned", "antonym" : "unconernced, indifferent, apathetic"},
+    "staid": { "en-meaning" : "(adj.) serious and dignified; quiet or subdued in character or conduct", "ko-meaning" : "침착한  성실한  불변의", "synonyms" : "sedate, sober, prim", "antonym" : "gaudy, jaunty, unconventional"},
+    "sustain": { "en-meaning" : "(v.) to support, nourish, keep up; to suffer, undergo; to bear up under, withstand; to affirm the validity of", "ko-meaning" : "지속하다  지탱하다  견디다  지지하다  부상을 입다", "synonyms" : "foster, uphold", "antonym" : "X"}
+}
 
 // json to array
 let key_list = [];
 
-for(i in words_1){
+for(i in words_4){
     key_list.push(i);
 }
 
@@ -252,9 +254,9 @@ for (i in key_list){
     i = Number(i)
     document.getElementById("vocaPP".replace("PP", String(i+1))).innerHTML = key_list[i];
 
-    document.getElementById("vocaPP_komeaning".replace("PP", String(i+1))).innerHTML = words_1[key_list[i]]["ko-meaning"] + " | "+words_1[key_list[i]]["en-meaning"];
-    document.getElementById("vocaPP_synonym".replace("PP", String(i+1))).innerHTML = "동의어 : " + words_1[key_list[i]]["synonyms"];
-    document.getElementById("vocaPP_antonym".replace("PP", String(i+1))).innerHTML = "반의어 : " + words_1[key_list[i]]["antonym"];
+    document.getElementById("vocaPP_komeaning".replace("PP", String(i+1))).innerHTML = words_4[key_list[i]]["ko-meaning"] + " | "+words_4[key_list[i]]["en-meaning"];
+    document.getElementById("vocaPP_synonym".replace("PP", String(i+1))).innerHTML = "동의어 : " + words_4[key_list[i]]["synonyms"];
+    document.getElementById("vocaPP_antonym".replace("PP", String(i+1))).innerHTML = "반의어 : " + words_4[key_list[i]]["antonym"];
 }
 
 
