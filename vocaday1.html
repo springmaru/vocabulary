@@ -158,6 +158,7 @@ for(i in words_1){
 for (i in key_list){
     i = Number(i)
     document.getElementById("vocaPP".replace("PP", String(i+1))).innerHTML = key_list[i];
+    
     document.getElementById("vocaPP_komeaning".replace("PP", String(i+1))).innerHTML = words_1[key_list[i]]["ko-meaning"] + " | "+words_1[key_list[i]]["en-meaning"];
     document.getElementById("vocaPP_synonym".replace("PP", String(i+1))).innerHTML = "동의어 : " + words_1[key_list[i]]["synonym"];
     document.getElementById("vocaPP_antonym".replace("PP", String(i+1))).innerHTML = "반의어 : " + words_1[key_list[i]]["antonym"];
