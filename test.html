@@ -261,7 +261,7 @@ function getRandomword(){
 
 function isitcorrect(){
     let value_input = document.getElementById("text_input");
-    if (-1 != all_words_list[current_word]["ko-meaning"].split(" ").indexOf(value_input.value)){ window.alert("True!") }
+    if (-1 != all_words_list[current_word]["ko-meaning"].split("  ").indexOf(value_input.value)){ window.alert("True!") }
     else{window.alert("False TT")}
     value_input.value = null; 
 
