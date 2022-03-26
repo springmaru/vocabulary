@@ -1,4 +1,4 @@
-export const words_1 = {"citadel": {"ko-meaning" : "요새", "en-meaning" : "(n.) a fortress that overlooks and protects a city; any strong or commanding place", "synonyms" : "bastion", "antonym" : ""},
+const words_1 = {"citadel": {"ko-meaning" : "요새", "en-meaning" : "(n.) a fortress that overlooks and protects a city; any strong or commanding place", "synonyms" : "bastion", "antonym" : ""},
 "collaborate": {"ko-meaning" : "협업하다", "en-meaning" : "(v.) to work with, work together", "synonyms" : "", "antonym" : ""},
 "decree":{"en-meaning" : "(n.) an order having the force of law; (v.) to issue such an order; to command firmly or forcefully", "ko-meaning" : "명령  조례  명하다", "synonyms" : "", "antonym" : ""},
 "discordant":{"en-meaning" : "(adj.) disagreeable in sound, jarring; lacking in harmony, conflicting", "ko-meaning" : "불협화음", "synonyms" : "", "antonym" : ""},
@@ -13,7 +13,7 @@ export const words_1 = {"citadel": {"ko-meaning" : "요새", "en-meaning" : "(n.
 
 };
 
-export const words_2 = { 
+const words_2 = { 
     "bontiful": { "en-meaning" : "(adj.) giving freely, generous; plentiful, given abundantly", "ko-meaning" : "풍부한  관대한", "synonyms" : "", "antonym" : ""},
     "congested": { "en-meaning" : "(adj., part.) overcrowded, filled or occupied to excess", "ko-meaning" : "혼잡한  밀집한  가득한", "synonyms" : "", "antonym" : ""},
     "detriment": { "en-meaning" : "(n.) harm or loss; injury, damage; a disadvantage; a cause of harm, injury, loss, or damage", "ko-meaning" : "손해  손상  해", "synonyms" : "", "antonym" : ""},
@@ -30,7 +30,7 @@ export const words_2 = {
     "venerate": { "en-meaning" : "(v.) to regard with reverence, look up to with great respect", "ko-meaning" : "존경하다  숭배하다  경모하다", "synonyms" : "", "antonym" : ""}
 }
 
-export const words_3 = { 
+const words_3 = { 
     "allot": { "en-meaning" : "(v.) to assign or distribute in shares or portions", "ko-meaning" : "할당하다", "synonyms" : "", "antonym" : ""},
     "amass": { "en-meaning" : "(v.) to bring together, collect, gather, especially for oneself; to come together, assemble", "ko-meaning" : "축적하다  모으다  모이다", "synonyms" : "", "antonym" : ""},
     "audacious": { "en-meaning" : "(adj.) bold, adventurous, recklessly daring", "ko-meaning" : "대담한  넉살좋은  무례한", "synonyms" : "", "antonym" : ""},
@@ -47,7 +47,7 @@ export const words_3 = {
     "willful": { "en-meaning" : "(adj.) stubbornly self-willed; done on purpose, deliberate", "ko-meaning" : "계획적인  옹고집의  외고집의", "synonyms" : "", "antonym" : ""}
 }
 
-export const words_4 = { 
+const words_4 = { 
     "bolster": { "en-meaning" : "(v.) to support, give a boost to; (n.) a long pillow or cushion; a supporting post", "ko-meaning" : "지지하다  보강하다  긴 배개", "synonyms" : "", "antonym" : ""},
     "deplore": { "en-meaning" : "(v.) to feel or express regret or disapproval", "ko-meaning" : "한탄하다  개탄하다  슬퍼하다", "synonyms" : "", "antonym" : ""},
     "frivolous": { "en-meaning" : "(adj.) of little importance, not worthy of serious attention; not meant seriously", "ko-meaning" : "하찮은  경박한  경솔한  사소한", "synonyms" : "", "antonym" : ""},
@@ -64,7 +64,7 @@ export const words_4 = {
     "sustain": { "en-meaning" : "(v.) to support, nourish, keep up; to suffer, undergo; to bear up under, withstand; to affirm the validity of", "ko-meaning" : "지속하다  지탱하다  견디다  지지하다  부상을 입다", "synonyms" : "", "antonym" : ""}
 }
 
-export const words_5 = { 
+const words_5 = { 
     "ample": { "en-meaning" : "(adj.) more than enough, large, spacious", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
     "assert": { "en-meaning" : "(v.) to declare or state as truth, maintain or defend, put forward forcefully", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
     "disdain": { "en-meaning" : "(v.) to look upon with scorn; to refuse scornfully; (n.) a feeling of contempt", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
@@ -81,7 +81,7 @@ export const words_5 = {
     "volatile": { "en-meaning" : "(adj.) highly changeable, fickle; tending to become violent or explosive; changing readily from the liquid to the gaseous state", "ko-meaning" : "", "synonyms" : "", "antonym" : ""}
 }
 
-export const words_6 = { 
+const words_6 = { 
     "aloof": { "en-meaning" : "(adj.) withdrawn, standing apart from others (usually as a matter of choice)", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
     "anguish": { "en-meaning" : "(n.) great mental suffering, distress, or pain; (v.) to be deeply tormented by pain or sorrow", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
     "articulate": { "en-meaning" : "(v.) to pronounce distinctly; to express well in words; to fit together into a system; (adj.) able to use language effectively; expressed clearly and forcefully", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
@@ -98,7 +98,7 @@ export const words_6 = {
     "scopegoat": { "en-meaning" : "(n.) a person or thing carrying the blame for others", "ko-meaning" : "", "synonyms" : "", "antonym" : ""}
 }
 
-export const words_7 = { 
+const words_7 = { 
     "acme": { "en-meaning" : "(n.) the highest point", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
     "attribute": { "en-meaning" : "(n.) a quality or characteristic belonging to or associated with someone or something; (v.) to assign to, credit with; to regard as caused by or resulting from", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
     "belittle": { "en-meaning" : "(v.) to make something appear smaller than it is; to refer to in a way that suggests lack of importance or value", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
