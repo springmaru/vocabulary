@@ -59,7 +59,7 @@ body {
         <div class="card-body" id = "wordname"></div>
         <div class="card-footer">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Meaning" id = "text_input">
+                <input type="text" class="form-control" placeholder="Meaning" id = "text_input" onkeyup="enterkey()" >
                 <button class="btn btn-success" type="submit" onClick ="isitcorrect()" id = "isittruebutton">Is it ?</button>
             </div>
         
@@ -263,10 +263,17 @@ function isitcorrect(){
     let value_input = document.getElementById("text_input");
     if (-1 != all_words_list[current_word]["ko-meaning"].split(" ").indexOf(value_input.value)){ window.alert("True!") }
     else{window.alert("False TT")}
-
+    value_input.value = null; 
 
     
     //asd
+}
+
+function enterkey() {
+	if (window.event.keyCode == 13) {
+      isitcorrect()
+      $("#answerbutton").show();
+    }
 }
 
 
