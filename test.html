@@ -9,8 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+  rel="stylesheet"/>
+<style>
+body {
+    font-family: "Noto Sans KR"
+}
+
+</style>
 </head>
-<body>
+<body onload="getRandomword()">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -45,15 +56,19 @@
 <div class="container" title="random" >
     <div class="card">
         <div class="card-header">Vocabulary Workshop Unit 1-7 Random Test</div>
-        <div class="card-body">antics</div>
+        <div class="card-body" id = "wordname"></div>
         <div class="card-footer">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Meaning">
-                <button class="btn btn-success" type="submit">Is it ?</button>
+                <input type="text" class="form-control" placeholder="Meaning" id = "text_input">
+                <button class="btn btn-success" type="submit" onClick ="isitcorrect()" id = "isittruebutton">Is it ?</button>
             </div>
         
         <div class="d-grid">
-            <button type="button" class="btn btn-primary btn-block"  data-bs-toggle="modal" data-bs-target="#myModal">Meaning</button>
+            <div class="btn-group" id = "answerbutton">
+                <button type="button" class="btn btn-primary btn-block"  data-bs-toggle="modal" data-bs-target="#myModal">Meaning</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="getRandomword()" id ="Next">Next!</button>
+            </div>
+            
         </div>
               
 
@@ -64,12 +79,12 @@
         
                 
                 <div class="modal-header">
-                <h4 class="modal-title"></h4>
+                <h4 class="modal-title" id = "meaning_title"></h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
         
                 
-                <div class="modal-body">
+                <div class="modal-body" id = "meaning_description">
                 
                 </div>
         
@@ -85,5 +100,69 @@
     </div>
 </div>
 
+<script>
+
+const words_1 = {"citadel": {"ko-meaning" : "요새", "en-meaning" : "(n.) a fortress that overlooks and protects a city; any strong or commanding place", "synonyms" : "bastion", "antonym" : ""},
+"collaborate": {"ko-meaning" : "협업하다", "en-meaning" : "(v.) to work with, work together", "synonyms" : "", "antonym" : ""},
+"decree":{"en-meaning" : "(n.) an order having the force of law; (v.) to issue such an order; to command firmly or forcefully", "ko-meaning" : "n. 명령 조례 v. 명하다", "synonyms" : "", "antonym" : ""},
+"discordant":{"en-meaning" : "(adj.) disagreeable in sound, jarring; lacking in harmony, conflicting", "ko-meaning" : "불협화음", "synonyms" : "", "antonym" : ""},
+"evolve":{"en-meaning" : "(v.) to develop gradually; to rise to a higher level", "ko-meaning" : "진화하다", "synonyms" : "", "antonym" : ""},
+"excerpt":{"en-meaning" : "(n.) a passage taken from a book, article, etc.; (v.) to take such a passage; to quote", "ko-meaning" : "n. 발췌 인용 v. 발췌하다 인용하다", "synonyms" : "", "antonym" : ""},
+"grope":{"en-meaning" : "(v.) to feel about hesitantly with the hands; to search blindly and uncertainly", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
+"hover":{"en-meaning" : "(v.) to float or hang suspended over; to move back and forth uncertainly over or around", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
+"preclude":{"en-meaning" : "(v.) to make impossible, prevent, shut out", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
+"revert":{"en-meaning" : "(v.) to return, go back", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
+"servile":{"en-meaning" : "(adj.) of or relating to a slave; behaving like or suitable for a slave or a servant, menial; lacking spirit or independence, abjectly submissive", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
+"vigil":{"en-meaning" : "(n.) a watch, especially at night; any period of watchful attention", "ko-meaning" : "", "synonyms" : "", "antonym" : ""},
+
+};
+
+let key_list1 = [];
+let current_word;
+for(i in words_1){
+    key_list1.push(i);
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
+}
+
+
+function getRandomword(){
+    current_word = key_list1[getRandomInt(0,(key_list1.length-1))]
+    document.getElementById("wordname").innerHTML = current_word;
+
+    document.getElementById("meaning_title").innerHTML = current_word;
+    document.getElementById("meaning_description").innerHTML = words_1[current_word]["ko-meaning"] + " | " +words_1[current_word]["en-meaning"]+ "<br> = " + words_1[current_word]["synonyms"] +"<br> <-> " + words_1[current_word]["antonym"];
+}
+
+function isitcorrect(){
+    let value_input = document.getElementById("text_input");
+    if (-1 != words_1[current_word]["ko-meaning"].split(" ").indexOf(value_input.value)){ window.alert("True!") }
+    else{window.alert("False TT")}
+
+
+    
+    //asd
+}
+
+
+
+$(document).ready(function(){
+  $("#answerbutton").hide();
+  $("#isittruebutton").click(function(){
+    $("#answerbutton").show();
+  });
+  $("#Next").click(function(){
+    $("#answerbutton").hide();
+  });
+});
+
+
+
+
+</script>
 </body>
 </html>
