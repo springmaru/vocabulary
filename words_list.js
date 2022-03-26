@@ -14,37 +14,37 @@ const words_1 = {"citadel": {"ko-meaning" : "요새", "en-meaning" : "(n.) a for
 };
 
 const words_2 = { 
-    "bontiful": { "en-meaning" : "(adj.) giving freely, generous; plentiful, given abundantly", "ko-meaning" : "풍부한  관대한", "synonyms" : "", "antonym" : ""},
-    "congested": { "en-meaning" : "(adj., part.) overcrowded, filled or occupied to excess", "ko-meaning" : "혼잡한  밀집한  가득한", "synonyms" : "", "antonym" : ""},
-    "detriment": { "en-meaning" : "(n.) harm or loss; injury, damage; a disadvantage; a cause of harm, injury, loss, or damage", "ko-meaning" : "손해  손상  해", "synonyms" : "", "antonym" : ""},
-    "durable": { "en-meaning" : "(adj.) sturdy, not easily worn out or destroyed; lasting for a long time; (n. pl.) consumer goods used repeatedly over a series of years", "ko-meaning" : "튼튼한  내구력이 있는", "synonyms" : "", "antonym" : ""},
+    "bontiful": { "en-meaning" : "(adj.) giving freely, generous; plentiful, given abundantly", "ko-meaning" : "풍부한  관대한", "synonyms" : "liberal, abundant, copious", "antonym" : "scarce, scantly, in short supply"},
+    "congested": { "en-meaning" : "(adj., part.) overcrowded, filled or occupied to excess", "ko-meaning" : "혼잡한  밀집한  가득한", "synonyms" : "jammed, choked, packed", "antonym" : "uncluttered, unimpeded"},
+    "detriment": { "en-meaning" : "(n.) harm or loss; injury, damage; a disadvantage; a cause of harm, injury, loss, or damage", "ko-meaning" : "손해  손상  해", "synonyms" : "hindrance, liability", "antonym" : "advantage, help, plus"},
+    "durable": { "en-meaning" : "(adj.) sturdy, not easily worn out or destroyed; lasting for a long time; (n. pl.) consumer goods used repeatedly over a series of years", "ko-meaning" : "튼튼한  내구력이 있는", "synonyms" : "(adj.)long-lasting, enduring", "antonym" : "(adj.)fragile, persialbe, fleeting, ephemeral"},
 
-    "enterprising": { "en-meaning" : "(adj.) energetic, willing and able to start something new; showing boldness and imagination", "ko-meaning" : "진취적인  적극적인", "synonyms" : "", "antonym" : ""},
-    "frugal": { "en-meaning" : "(adj.) economical, avoiding waste and luxury; scanty, poor, meager", "ko-meaning" : "검소한", "synonyms" : "", "antonym" : ""},
-    "invalidate": { "en-meaning" : "(v.) to make valueless, take away all force or effect", "ko-meaning" : "무효화하다  무효로 하다  무효로 만들다", "synonyms" : "", "antonym" : ""},
-    "legendary": { "en-meaning" : "(adj.) described in well-known stories (legends) rather than in real life", "ko-meaning" : "전설적인", "synonyms" : "", "antonym" : ""},
+    "enterprising": { "en-meaning" : "(adj.) energetic, willing and able to start something new; showing boldness and imagination", "ko-meaning" : "진취적인  적극적인", "synonyms" : "vigorous, aggressive, audacious", "antonym" : "lazy, indolent, timid, diffident"},
+    "frugal": { "en-meaning" : "(adj.) economical, avoiding waste and luxury; scanty, poor, meager", "ko-meaning" : "검소한", "synonyms" : "thrifty, skimpy;", "antonym" : "wasteful, indulgent, lavish"},
+    "invalidate": { "en-meaning" : "(v.) to make valueless, take away all force or effect", "ko-meaning" : "무효화하다  무효로 하다  무효로 만들다", "synonyms" : "cancel, annul, disapprove, discredit", "antonym" : "supprot, confirm, back up, legalize"},
+    "legendary": { "en-meaning" : "(adj.) described in well-known stories (legends) rather than in real life", "ko-meaning" : "전설적인", "synonyms" : "mythical, fabulous, famous", "antonym" : "X"},
 
-    "maim": { "en-meaning" : "(v.) to cripple, disable, injure, mar, disfigure, mutilate", "ko-meaning" : "불구로 만들다  쓸모없게 하다  손상하다", "synonyms" : "", "antonym" : ""},
-    "minimize": { "en-meaning" : "(v.) to make as small as possible, make the least of; to make smaller than before", "ko-meaning" : "과소평가하다  줄이다", "synonyms" : "", "antonym" : ""},
-    "oblique": { "en-meaning" : "(adj.) slanting or sloping; not straightforward or direct", "ko-meaning" : "비스듬한  사선의  사격의", "synonyms" : "", "antonym" : ""},
-    "venerate": { "en-meaning" : "(v.) to regard with reverence, look up to with great respect", "ko-meaning" : "존경하다  숭배하다  경모하다", "synonyms" : "", "antonym" : ""}
-}
+    "maim": { "en-meaning" : "(v.) to cripple, disable, injure, mar, disfigure, mutilate", "ko-meaning" : "불구로 만들다  쓸모없게 하다  손상하다", "synonyms" : "X", "antonym" : "X"},
+    "minimize": { "en-meaning" : "(v.) to make as small as possible, make the least of; to make smaller than before", "ko-meaning" : "과소평가하다  줄이다", "synonyms" : "belittle, downplay", "antonym" : "magnify, enlarge, exaggerate"},
+    "oblique": { "en-meaning" : "(adj.) slanting or sloping; not straightforward or direct", "ko-meaning" : "비스듬한  사선의  사격의", "synonyms" : "diagonal, indirect", "antonym" : "direct, straight to the point"},
+    "venerate": { "en-meaning" : "(v.) to regard with reverence, look up to with great respect", "ko-meaning" : "존경하다  숭배하다  경모하다", "synonyms" : "worship, revere, idolize", "antonym" : "despise, detest, ridicule, deride"}
+};
 
 const words_3 = { 
-    "allot": { "en-meaning" : "(v.) to assign or distribute in shares or portions", "ko-meaning" : "할당하다", "synonyms" : "", "antonym" : ""},
-    "amass": { "en-meaning" : "(v.) to bring together, collect, gather, especially for oneself; to come together, assemble", "ko-meaning" : "축적하다  모으다  모이다", "synonyms" : "", "antonym" : ""},
-    "audacious": { "en-meaning" : "(adj.) bold, adventurous, recklessly daring", "ko-meaning" : "대담한  넉살좋은  무례한", "synonyms" : "", "antonym" : ""},
-    "comply": { "en-meaning" : "(v.) to yield to a request or command", "ko-meaning" : "지키다  따르다  응하다  동의하다", "synonyms" : "", "antonym" : ""},
+    "allot": { "en-meaning" : "(v.) to assign or distribute in shares or portions", "ko-meaning" : "할당하다", "synonyms" : "apportion, parcel out, allocate", "antonym" : "X"},
+    "amass": { "en-meaning" : "(v.) to bring together, collect, gather, especially for oneself; to come together, assemble", "ko-meaning" : "축적하다  모으다  모이다", "synonyms" : "pile up, garner", "antonym" : "scatter, dissipate, squander, waste"},
+    "audacious": { "en-meaning" : "(adj.) bold, adventurous, recklessly daring", "ko-meaning" : "대담한  넉살좋은  무례한", "synonyms" : "enterprising,brave", "antonym" : "timid, cowardly"},
+    "comply": { "en-meaning" : "(v.) to yield to a request or command", "ko-meaning" : "지키다  따르다  응하다  동의하다", "synonyms" : "consent, acquiesce", "antonym" : "reject, refuse, decline"},
 
-    "devoid": { "en-meaning" : "(adj.) not having or using, lacking", "ko-meaning" : "없는  결여된  빠진  사라진  결핍된", "synonyms" : "", "antonym" : ""},
-    "grapple": { "en-meaning" : "(n.) an iron hook used to grab and hold; (v.) to come to grips with, wrestle or fight with", "ko-meaning" : "잡아거는 갈고리  갈고리  파악하다  격투하다", "synonyms" : "", "antonym" : ""},
-    "instigate": { "en-meaning" : "(v.) to urge on; to stir up, provoke, start, incite", "ko-meaning" : "부추기다  유발시키다  선동하다  일으키다  충동하다", "synonyms" : "", "antonym" : ""},
-    "longevity": { "en-meaning" : "(n.) long life, long duration, length of life", "ko-meaning" : "장수  수명  장명", "synonyms" : "", "antonym" : ""},
+    "devoid": { "en-meaning" : "(adj.) not having or using, lacking", "ko-meaning" : "없는  결여된  빠진  사라진  결핍된", "synonyms" : "wanting, bereft", "antonym" : "full, abounding"},
+    "grapple": { "en-meaning" : "(n.) an iron hook used to grab and hold; (v.) to come to grips with, wrestle or fight with", "ko-meaning" : "잡아거는 갈고리  갈고리  파악하다  격투하다", "synonyms" : "tackle, confront, struggle with", "antonym" : "X"},
+    "instigate": { "en-meaning" : "(v.) to urge on; to stir up, provoke, start, incite", "ko-meaning" : "부추기다  유발시키다  선동하다  일으키다  충동하다", "synonyms" : "X", "antonym" : "stop, quell, squelch, quash"},
+    "longevity": { "en-meaning" : "(n.) long life, long duration, length of life", "ko-meaning" : "장수  수명  장명", "synonyms" : "X", "antonym" : "shortness, transience"},
 
-    "perspective": { "en-meaning" : "(n.) a point of view or general standpoint from which different things are viewed, physically or mentally; the appearance to the eye of various objects at a given time, place, or distance", "ko-meaning" : "관점  시각  전망  견해", "synonyms" : "", "antonym" : ""},
-    "perturb": { "en-meaning" : "(v.) to trouble, make uneasy; to disturb greatly; to throw into confusion", "ko-meaning" : "혼란시키다  교란하다  당황하다", "synonyms" : "", "antonym" : ""},
-    "relevant": { "en-meaning" : "(adj.) connected with or related to the matter at hand", "ko-meaning" : "관계가 있는  상당하는  연관된  적절한", "synonyms" : "", "antonym" : ""},
-    "willful": { "en-meaning" : "(adj.) stubbornly self-willed; done on purpose, deliberate", "ko-meaning" : "계획적인  옹고집의  외고집의", "synonyms" : "", "antonym" : ""}
+    "perspective": { "en-meaning" : "(n.) a point of view or general standpoint from which different things are viewed, physically or mentally; the appearance to the eye of various objects at a given time, place, or distance", "ko-meaning" : "관점  시각  전망  견해", "synonyms" : "viewpoint, sense of proportion", "antonym" : "X"},
+    "perturb": { "en-meaning" : "(v.) to trouble, make uneasy; to disturb greatly; to throw into confusion", "ko-meaning" : "혼란시키다  교란하다  당황하다", "synonyms" : "upset, agitate, anger", "antonym" : "delight, gladden, please"},
+    "relevant": { "en-meaning" : "(adj.) connected with or related to the matter at hand", "ko-meaning" : "관계가 있는  상당하는  연관된  적절한", "synonyms" : "pertinent, germane, appicable", "antonym" : "unconnected, extraneous"},
+    "willful": { "en-meaning" : "(adj.) stubbornly self-willed; done on purpose, deliberate", "ko-meaning" : "계획적인  옹고집의  외고집의", "synonyms" : "headstrong, obstinate, permediated", "antonym" : "docile, obedient, tractable"}
 }
 
 const words_4 = { 
