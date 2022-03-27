@@ -17,3 +17,10 @@ FreshVoca는 한국외국어대학교부설고등학교 18기 학생들이... �
 
 ## Contributors
     contributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlist
+
+## Updates
+    Alpha 1.0.0. (3/25~) : Developing index, vocatest, vocalist, wordlist.json, ... pages.
+    Beta 1.0.0. (3/28~) : Beta test started. 
+
+## Contact
+    기술적인 문제나 버그가 있다면 iajsdoifsaif로 연락해주세욤 ^_^
