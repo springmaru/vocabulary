@@ -176,3 +176,16 @@
     margin-left: 17%;
 
 }
+
+.sloth{
+    font-size: 150%;
+    text-decoration: underline rgb(82, 65, 20);
+    color:rgb(82, 65, 20);
+    font-weight: 400;
+}
+
+.sloth:hover{
+    letter-spacing: 2px;
+    color:rgb(82, 65, 20);
+    transition: 0.3s;
+}
