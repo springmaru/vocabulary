@@ -108,6 +108,9 @@
     #cards>*{
         margin-bottom:5%;
     }
+    #nick{
+        margin-right: 5%;
+    }
   }
 
 
@@ -147,3 +150,4 @@
     text-decoration: underline 1.5px rgb(158, 131, 255);
     transition: 0.5s;
 }
+
