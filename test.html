@@ -53,7 +53,7 @@ body {
 <br>
 <br>
 
-<div class="container" title="random" id="test">
+<div class="container" title="Random Test" data-bs-toggle="tooltip" id="test">
     <div class="card">
         <div class="card-header">Vocabulary Workshop Unit 1-7 Random Test</div>
         <div class="card-body" id = "wordname"></div>
@@ -101,6 +101,11 @@ body {
 </div>
 
 <script>
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 const words_1 = {"citadel": {"ko-meaning" : "요새", "en-meaning" : "(n.) a fortress that overlooks and protects a city; any strong or commanding place", "synonyms" : "fort, stronghold, bulwark, bastion", "antonym" : "X"},
 "collaborate": {"ko-meaning" : "협업하다", "en-meaning" : "(v.) to work with, work together", "synonyms" : "team up, join forces", "antonym" : "work alone"},
 "decree":{"en-meaning" : "(n.) an order having the force of law; (v.) to issue such an order; to command firmly or forcefully", "ko-meaning" : "명령  조례  명하다", "synonyms" : "(n.)proclamation edict;(v.)proclaim", "antonym" : "X"},
