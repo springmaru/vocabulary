@@ -71,6 +71,20 @@
     transition: 0.5s;
 }
 
+#cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+#crd1{
+    margin-right: 2%;
+}
+
+#crd3{
+    margin-left: 2%;
+}
 @media (max-width: 1200px) {
     #making {
       max-width: 100%;
@@ -79,23 +93,28 @@
     }
     #cards{
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+    }
+    #crd1{
+        margin-right: 0%;
+    }
+    #crd2{
+        margin-right: 0.5%;
+    }
+    #crd3{
+        margin-left: 0%;
+        margin-right: 0.7%;
+    }
+    #cards>*{
+        margin-bottom:5%;
+    }
+    #nick{
+        margin-right: 5%;
     }
   }
 
-#cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 7%;
-  }
 
-  #crd1{
-      margin-right: 2.5%;
-  }
-  #crd2{
-      margin-left: 2.5%;
-  }
+
   /*#cd {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -120,3 +139,15 @@
 .thank{
     color:rgb(0, 0, 61)
 }
+
+#CBT{
+    text-decoration: underline 1.5px black;
+    color:black;
+}
+
+#CBT:hover{
+    color:rgb(158, 131, 255);
+    text-decoration: underline 1.5px rgb(158, 131, 255);
+    transition: 0.5s;
+}
+
