@@ -137,7 +137,12 @@
 }
 
 .thank{
-    color:rgb(0, 0, 61)
+    color:rgb(57, 0, 122)
+}
+
+.thank:hover{
+    letter-spacing: 1px;
+    transition: 0.5s;
 }
 
 #CBT{
@@ -151,3 +156,14 @@
     transition: 0.5s;
 }
 
+.CBT{
+    text-decoration: none;
+    color:black;
+
+}
+
+.CBT:hover{
+    color:rgb(115, 108, 143);
+    font-weight: 200%;
+    transition: 0.3s;
+}
