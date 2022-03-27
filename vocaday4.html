@@ -256,7 +256,7 @@ for (i in key_list){
     i = Number(i)
     document.getElementById("vocaPP".replace("PP", String(i+1))).innerHTML = key_list[i]+" ↓";
 
-    document.getElementById("vocaPP_komeaning".replace("PP", String(i+1))).innerHTML = words_4[key_list[i]]["ko-meaning"] + " | "+words_4[key_list[i]]["en-meaning"];
+    document.getElementById("vocaPP_komeaning".replace("PP", String(i+1))).innerHTML = words_4[key_list[i]]["ko-meaning"].replaceAll("  ", " , ")  + " | "+words_4[key_list[i]]["en-meaning"];
     document.getElementById("vocaPP_synonym".replace("PP", String(i+1))).innerHTML = "동의어 : " + words_4[key_list[i]]["synonyms"];
     document.getElementById("vocaPP_antonym".replace("PP", String(i+1))).innerHTML = "반의어 : " + words_4[key_list[i]]["antonym"];
 }
