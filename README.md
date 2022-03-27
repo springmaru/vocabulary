@@ -8,12 +8,12 @@ FreshVoca는 한국외국어대학교부설고등학교 18기 학생들이... �
 #### springmaru
     Python & Javascript & Web developer
 
-    Developed vocabulary list, vocabulary test page and functions (BS5, Javascript)
+    Developed vocabulary list, vocabulary test page and functions (HTML, Javascript) / Web Designing. (BS5)
 
 #### sqrlthndsnbe
     C & HTML & Web developer
 
-    Developed index page, referance page, maker's page(HTML, BS5) / DNS manager
+    Developed index page, referance page, maker's page (HTML) / DNS manager / Web Designing. (BS5)
 
 ## Contributors
     contributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlistcontributorlist
