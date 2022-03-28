@@ -21,7 +21,7 @@ body {
 
 </style>
 </head>
-<body onload="getRandomword() ">
+<body onload="getRandomword()">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -282,7 +282,7 @@ function isitcorrect(){
     if (-1 != all_words_list[current_word]["ko-meaning"].split("  ").indexOf(value_input.value)){ window.alert("True!") }
     else{window.alert("False TT")}
     value_input.value = null; 
-
+    
     
     //asd
 }
@@ -303,6 +303,7 @@ function save_to_array(){
   get_local()
   _note[current_word] = all_words_list[current_word]
   localStorage.setItem("voca_note", JSON.stringify(_note));
+  window.alert("성공적으로 " + current_word + "를 저장했어요 !");
 
 }
 

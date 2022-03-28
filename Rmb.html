@@ -11,7 +11,7 @@
     <link href="FV.png" rel="shortcut icon" type="image/x-icon">
     <title>Home</title>
 </head>
-<body onkeyup="skey()">
+<body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -48,20 +48,79 @@
       <br>
       <br>
 
+    <div class = 'container' id = "main_">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="삭제하기" id = "text_input" onkeyup="enterkey()" >
+        <button class="btn btn-success" type="submit" onClick ="delete_voca()" id = "Delete_button">삭제 !</button>
+    </div>
 
+
+    </div>
       
 
 
 <script>
 
 
+let _note = JSON.parse(localStorage.getItem("voca_note"));
+let key_list1=[];
+
+for (i in _note){
+  key_list1.push(i);
+}
+
+for (i in key_list1){
+  let element = document.getElementById("main_");
+  let new_hTag = document.createElement('h3');
+  let new_hTag2 = document.createElement('p');
+  let new_hTag3 = document.createElement('p');
+  let new_hTag4 = document.createElement('p');
+  //synonyms 
+  let new_br = document.createElement("br");
+
+  new_hTag.innerHTML = key_list1[i];
+  new_hTag2.innerHTML = _note[key_list1[i]]["ko-meaning"] + " | " + _note[key_list1[i]]["en-meaning"];
+  new_hTag3.innerHTML = "동의어 : " + _note[key_list1[i]]["synonyms"]
+  new_hTag4.innerHTML = "반의어 : " + _note[key_list1[i]]["antonym"]
+  element.appendChild(new_hTag);
+  element.appendChild(new_hTag2);
+  element.appendChild(new_hTag3);
+  element.appendChild(new_hTag4);
+  
+  element.appendChild(new_br);
+
+  
+}
 
 
-function skey() {
-	if (window.event.keyCode == 83) {
-        window.location.href = './easter.html';
+function create_hTag(){
+  let element = document.getElementById("main_");
+  let new_hTag = document.createElement('h1');
+  
+  new_hTag.innerHTML = "ask;djlaskdj;lk";
+  
+  element.appendChild(new_hTag);
+  
+}
+
+
+function delete_voca(){
+  let value_input = document.getElementById("text_input");
+  console.log(value_input.value)
+  delete _note[value_input.value]
+  console.log(String(_note))
+  localStorage.setItem('voca_note',JSON.stringify(_note));
+
+  window.location.reload()
+}
+
+
+function enterkey() {
+	if (window.event.keyCode == 13) {
+      delete_voca()
     }
 }
+
 
 </script>
 </body> 
