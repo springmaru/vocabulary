@@ -109,10 +109,10 @@
         margin-bottom:5%;
     }
     #nick{
-        margin-right: 5%;
+        margin-right: 0%;
     }
     #checkbo>*{
-        font-size: 80%;
+        font-size: 50%;
     }
   }
 
