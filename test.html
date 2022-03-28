@@ -229,11 +229,13 @@ const words_7 = {
 };
 
 
-
+  
 </script>
 
 <!-- 메인 스크립트 -->
 <script>
+
+  
 let all_words_list = {};
 
 
@@ -259,6 +261,16 @@ for(i in all_words_list){
     key_list1.push(i);
 }
 
+
+
+a = localStorage.getItem("voca_note")
+if (a == null){
+  localStorage.setItem("voca_note", "{}")
+  window.alert("초기 설정을 완료했어요 !")
+}
+
+
+
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -267,6 +279,8 @@ function getRandomInt(min, max) {
 
 
 function getRandomword(){
+    a = localStorage.getItem("voca_note")
+    console.log(a);
     get_local()
     current_word = key_list1[getRandomInt(0,(key_list1.length))]
     document.getElementById("wordname").innerHTML = current_word;
