@@ -21,8 +21,8 @@ body {
 
 </style>
 </head>
-<body onload="getRandomword()">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<body onload="getRandomword() ">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="hafs.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
@@ -67,7 +67,7 @@ body {
             <div class="btn-group" id = "answerbutton">
                 <button type="button" class="btn btn-primary btn-block"  data-bs-toggle="modal" data-bs-target="#myModal">Meaning</button>
                 <button type="button" class="btn btn-primary btn-block" onclick="getRandomword()" id ="Next">Next!</button>
-                <button type="button" class="btn btn-primary btn-block" onclick="getRandomword()" id ="Next">Next!</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="save_to_array()" id ="Check_note">Remember Note</button>
             </div>
             
         </div>
@@ -102,7 +102,7 @@ body {
 </div>
 
 <script>
-
+// const data = localStorage.getItem("voca_note")
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -249,6 +249,8 @@ Object.assign(all_words_list, words_7);
 
 let key_list1 = [];
 let current_word;
+let _note = {};
+
 for(i in all_words_list){
     key_list1.push(i);
 }
@@ -261,12 +263,14 @@ function getRandomInt(min, max) {
 
 
 function getRandomword(){
+    get_local()
     current_word = key_list1[getRandomInt(0,(key_list1.length))]
     document.getElementById("wordname").innerHTML = current_word;
 
     document.getElementById("meaning_title").innerHTML = current_word;
     document.getElementById("meaning_description").innerHTML = all_words_list[current_word]["ko-meaning"] + " | " +all_words_list[current_word]["en-meaning"]+ "<br> = " + all_words_list[current_word]["synonyms"] +"<br> <-> " + all_words_list[current_word]["antonym"];
 }
+
 
 function isitcorrect(){
     let value_input = document.getElementById("text_input");
@@ -278,12 +282,25 @@ function isitcorrect(){
     //asd
 }
 
+
+
 function enterkey() {
 	if (window.event.keyCode == 13) {
       isitcorrect()
       $("#answerbutton").show();
     }
 }
+function get_local(){
+  _note = JSON.parse(localStorage.getItem("voca_note"));
+}
+
+function save_to_array(){
+  get_local()
+  _note[current_word] = all_words_list[current_word]
+  localStorage.setItem("voca_note", JSON.stringify(_note));
+
+}
+
 
 
 $(document).ready(function(){
