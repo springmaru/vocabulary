@@ -111,8 +111,12 @@
     #nick{
         margin-right: 0%;
     }
+    #checkbo{   
+        flex-direction: center;
+        align-items: center;
+    }
     #checkbo>*{
-        font-size: 65%;
+        font-size: 70%;
     }
   }
 

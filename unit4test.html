@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="FV.png" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Unit 4 Test</title>
+<style>
+body {
+    font-family: "Noto Sans KR"
+}
+
+</style>
+</head>
+<body onload="getRandomword()">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="hafs.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+              </a>
+          <a class="navbar-brand" href="index.html">FreshVocab</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="test.html">RandomTest</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="References.html">References</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Maker.html">Developers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container" data-bs-toggle="tooltip" id="test">
+    <div class="card">
+        <div class="card-header">Vocabulary Workshop Unit 4 Random Test</div>
+        <div class="card-body" id = "wordname"></div>
+        <div class="card-footer">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Meaning" id = "text_input" onkeyup="enterkey()" >
+                <button class="btn btn-success" type="submit" onClick ="isitcorrect()" id = "isittruebutton">Is it ?</button>
+            </div>
+        
+        <div class="d-grid">
+            <div class="btn-group" id = "answerbutton">
+                <button type="button" class="btn btn-primary btn-block"  data-bs-toggle="modal" data-bs-target="#myModal">Meaning</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="getRandomword()" id ="Next">Next!</button>
+            </div>
+            
+        </div>
+              
+
+        
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+            <div class="modal-content">
+        
+                
+                <div class="modal-header">
+                <h4 class="modal-title" id = "meaning_title"></h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                
+                <div class="modal-body" id = "meaning_description">
+                
+                </div>
+        
+                
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+const words_4 = { 
+    "bolster": { "en-meaning" : "(v.) to support, give a boost to; (n.) a long pillow or cushion; a supporting post", "ko-meaning" : "지지하다  보강하다  긴 배개", "synonyms" : "reinforce, buttress, validate", "antonym" : "undermine, weaken, impair"},
+    "deplore": { "en-meaning" : "(v.) to feel or express regret or disapproval", "ko-meaning" : "한탄하다  개탄하다  슬퍼하다", "synonyms" : "lament, bemoan, bewail", "antonym" : "approve, commend, extol"},
+    "frivolous": { "en-meaning" : "(adj.) of little importance, not worthy of serious attention; not meant seriously", "ko-meaning" : "하찮은  경박한  경솔한  사소한", "synonyms" : "silly, foolish, inane, petty", "antonym" : "serious, important, significant"},
+    "obsess": { "en-meaning" : "(v.) to trouble, haunt, or fill the mind", "ko-meaning" : "사로잡히다  늘러붙다  붙어 다니다", "synonyms" : "preoccupy", "antonym" : "X"},
+
+    "ornate": { "en-meaning" : "(adj.) elaborately decorated; showily splendid", "ko-meaning" : "화려하게 장식한  화려한", "synonyms" : "fancy, flashy, flamboyant", "antonym" : "plain, stark, austere"},
+    "oust": { "en-meaning" : "(v.) to remove, drive out of a position or place", "ko-meaning" : "빼앗다  내쫓다  축출하다", "synonyms" : "expel, eject", "antonym" : "admit, welcome"},
+    "peruse": { "en-meaning" : "(v.) to read thoroughly and carefully", "ko-meaning" : "통독하다  숙독하다  읽다", "synonyms" : "study, pore over, scrutinize", "antonym" : "X"},
+    "prone": { "en-meaning" : "(adj.) lying face down; inclined, likely", "ko-meaning" : "경향이 있는", "synonyms" : "prostrate, liable", "antonym" : "standing upright, inlikely"},
+
+    "residue": { "en-meaning" : "(n.) a remainder, that which remains when a part has been used up or removed", "ko-meaning" : "잔류물  잔존  잔여  찌꺼기", "synonyms" : "remnant, remains, leavings", "antonym" : "X"},
+    "solicitous": { "en-meaning" : "(adj.) showing concern or care; fearful or anxious about someone or something", "ko-meaning" : "염려하는  걱정하는  열심인", "synonyms" : "concerned", "antonym" : "unconernced, indifferent, apathetic"},
+    "staid": { "en-meaning" : "(adj.) serious and dignified; quiet or subdued in character or conduct", "ko-meaning" : "침착한  성실한  불변의", "synonyms" : "sedate, sober, prim", "antonym" : "gaudy, jaunty, unconventional"},
+    "sustain": { "en-meaning" : "(v.) to support, nourish, keep up; to suffer, undergo; to bear up under, withstand; to affirm the validity of", "ko-meaning" : "지속하다  지탱하다  견디다  지지하다  부상을 입다", "synonyms" : "foster, uphold", "antonym" : "X"}
+};
+
+
+
+</script>
+
+<!-- 메인 스크립트 -->
+<script>
+let all_words_list = {};
+
+
+
+
+Object.assign(all_words_list, words_4);
+
+
+
+
+
+
+
+let key_list1 = [];
+let current_word;
+for(i in all_words_list){
+    key_list1.push(i);
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; 
+}
+
+
+function getRandomword(){
+    current_word = key_list1[getRandomInt(0,(key_list1.length))]
+    document.getElementById("wordname").innerHTML = current_word;
+
+    document.getElementById("meaning_title").innerHTML = current_word;
+    document.getElementById("meaning_description").innerHTML = all_words_list[current_word]["ko-meaning"] + " | " +all_words_list[current_word]["en-meaning"]+ "<br> = " + all_words_list[current_word]["synonyms"] +"<br> <-> " + all_words_list[current_word]["antonym"];
+}
+
+function isitcorrect(){
+    let value_input = document.getElementById("text_input");
+    if (-1 != all_words_list[current_word]["ko-meaning"].split("  ").indexOf(value_input.value)){ window.alert("True!") }
+    else{window.alert("False TT")}
+    value_input.value = null; 
+
+    
+    //asd
+}
+
+function enterkey() {
+	if (window.event.keyCode == 13) {
+      isitcorrect()
+      $("#answerbutton").show();
+    }
+}
+
+
+$(document).ready(function(){
+  $("#answerbutton").hide();
+  $("#isittruebutton").click(function(){
+    $("#answerbutton").show();
+  });
+  $("#Next").click(function(){
+    $("#answerbutton").hide();
+  });
+});
+
+
+
+</script>
+</body>
+</html>
