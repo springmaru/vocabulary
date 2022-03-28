@@ -111,6 +111,9 @@
     #nick{
         margin-right: 5%;
     }
+    #checkbo>*{
+        font-size: 80%;
+    }
   }
 
 
@@ -189,4 +192,14 @@
     letter-spacing: 2px;
     color:rgb(82, 65, 20);
     transition: 0.3s;
+}
+
+#checkbo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 11.5%;
+}
+
+#checkbo>*{
+    margin-left: 1%;
 }
