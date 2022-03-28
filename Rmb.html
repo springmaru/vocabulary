@@ -11,7 +11,7 @@
     <link href="FV.png" rel="shortcut icon" type="image/x-icon">
     <title>Home</title>
 </head>
-<body onkeyup="skey()">
+<body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -48,7 +48,10 @@
       <br>
 
     <div class = 'container' id = "main_">
-      <input></input>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="삭제하기" id = "text_input" onkeyup="enterkey()" >
+        <button class="btn btn-success" type="submit" onClick ="delete_voca()" id = "Delete_button">삭제 !</button>
+    </div>
 
 
     </div>
@@ -99,6 +102,23 @@ function create_hTag(){
   
 }
 
+
+function delete_voca(){
+  let value_input = document.getElementById("text_input");
+  console.log(value_input.value)
+  delete _note[value_input.value]
+  console.log(String(_note))
+  localStorage.setItem('voca_note',JSON.stringify(_note));
+
+  window.location.reload()
+}
+
+
+function enterkey() {
+	if (window.event.keyCode == 13) {
+      delete_voca()
+    }
+}
 
 
 </script>

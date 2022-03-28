@@ -301,6 +301,7 @@ function save_to_array(){
   get_local()
   _note[current_word] = all_words_list[current_word]
   localStorage.setItem("voca_note", JSON.stringify(_note));
+  window.alert("성공적으로 " + current_word + "를 저장했어요 !");
 
 }
 
