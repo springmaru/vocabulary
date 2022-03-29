@@ -280,7 +280,7 @@ function get_local(){
 function save_to_array(x){
   get_local()
   _note[x] = all_words_list[x]
-  localStorage.setItem("voca_note", JSON.stringify());
+  localStorage.setItem("voca_note", JSON.stringify(_note));
   window.alert("성공적으로 " + String(x) + "를 저장했어요 !");
   
 }
