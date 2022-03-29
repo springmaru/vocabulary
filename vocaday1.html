@@ -268,7 +268,12 @@ body {
 
 
 <script>
-
+a = localStorage.getItem("voca_note")
+if (a == null){
+  localStorage.setItem("voca_note", "{}")
+  window.alert("초기 설정을 완료했어요 !")
+}
+  
 const words_1 = {"citadel": {"ko-meaning" : "요새", "en-meaning" : "(n.) a fortress that overlooks and protects a city; any strong or commanding place", "synonyms" : "fort, stronghold, bulwark, bastion", "antonym" : "X"},
 "collaborate": {"ko-meaning" : "협업하다", "en-meaning" : "(v.) to work with, work together", "synonyms" : "team up, join forces", "antonym" : "work alone"},
 "decree":{"en-meaning" : "(n.) an order having the force of law; (v.) to issue such an order; to command firmly or forcefully", "ko-meaning" : "명령  조례  명하다", "synonyms" : "(n.)proclamation, edict; (v.)proclaim", "antonym" : "X"},
