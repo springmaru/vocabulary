@@ -79,7 +79,9 @@ body {
                     <p id = "voca1_komeaning">basic_text</p>
                     <p id = "voca1_synonym"></p>
                     <p id = "voca1_antonym"></p>
-                    <button type = "button" class = "btn btn-primary" align = "right" onclick = "">Add to List</button>
+                    <div align = "right">
+                    <button type = "button" class = "btn btn-primary" onclick = "add_list(1)">Add to List</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -265,7 +267,11 @@ for (i in key_list){
     document.getElementById("vocaPP_antonym".replace("PP", String(i+1))).innerHTML = "반의어 : " + words_1[key_list[i]]["antonym"];
 }
 
-
+function add_list(k){
+   window.alert(k);
+   
+  
+}
 </script>
 
 
