@@ -250,9 +250,11 @@ const words_1 = {"citadel": {"ko-meaning" : "요새", "en-meaning" : "(n.) a for
 "vigil":{"en-meaning" : "(n.) a watch, especially at night; any period of watchful attention", "ko-meaning" : "불침번  철야 ", "synonyms" : "X", "antonym" : "X"},
 
 };
-
+let all_words_list = words_1;
 // json to array
 let key_list = [];
+let _note = {};
+
 
 for(i in words_1){
     key_list.push(i);
@@ -268,8 +270,18 @@ for (i in key_list){
 }
 
 function add_list(k){
-   window.alert(key_list[int(k)-1]);
-   
+   save_to_array(key_list[Number(k)-1])
+}
+function get_local(){
+  _note = JSON.parse(localStorage.getItem("voca_note"));
+  //get local to global var
+}
+  
+function save_to_array(x){
+  get_local()
+  _note[x] = all_words_list[x]
+  localStorage.setItem("voca_note", JSON.stringify());
+  window.alert("성공적으로 " + String(x) + "를 저장했어요 !");
   
 }
 </script>
